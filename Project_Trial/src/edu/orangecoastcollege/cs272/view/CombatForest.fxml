@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.orangecoastcollege.cs272.view.CombatForest">
+   <children>
+      <ImageView fitHeight="461.0" fitWidth="612.0" layoutX="-6.0" layoutY="-51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/CombatForest.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="179.0" fitWidth="282.0" layoutX="279.0" layoutY="156.0" opacity="0.85" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/WolfNoBackground.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#optionsScene" opacity="0.75" text="*" />
+      <Button fx:id="runButton" layoutX="114.0" layoutY="327.0" mnemonicParsing="false" onAction="#run" opacity="0.75" text="Run">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="fightButton" layoutX="385.0" layoutY="327.0" mnemonicParsing="false" onAction="#fight" opacity="0.75" text="Fight">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="talkButton" layoutX="251.0" layoutY="327.0" mnemonicParsing="false" onAction="#talk" opacity="0.75" text="Talk">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Label fx:id="preBattleText" layoutX="6.0" layoutY="114.0" text="The Wolf looks like it &#10;might be aggressive, &#10;if not, maybe it will &#10;be your friend?&#10;You could always &#10;try asking it.">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="1.0" centerY="0.5096153846153846" radius="0.5238095238095238">
+               <stops>
+                  <Stop color="#00000095" />
+                  <Stop color="#00000095" offset="0.007434944237918215" />
+                  <Stop color="WHITE" offset="0.10408921933085502" />
+                  <Stop color="WHITE" offset="0.9628252788104089" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="runText" layoutX="16.0" layoutY="124.0" text="Thankfully the wolf&#10;seemed like it had&#10;somethign better to do.&#10;You escaped successfully." visible="false">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="1.0" centerY="0.5096153846153846" radius="0.5238095238095238">
+               <stops>
+                  <Stop color="#00000095" />
+                  <Stop color="#00000095" offset="0.007434944237918215" />
+                  <Stop color="WHITE" offset="0.10408921933085502" />
+                  <Stop color="WHITE" offset="0.9628252788104089" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="talkText" layoutX="16.0" layoutY="124.0" text="You tried talking with&#10;the wolf?&#10;It's a wolf...&#10;Well... you died.&#10;Good job!" visible="false">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="1.0" centerY="0.5096153846153846" radius="0.5238095238095238">
+               <stops>
+                  <Stop color="#00000095" />
+                  <Stop color="#00000095" offset="0.007434944237918215" />
+                  <Stop color="WHITE" offset="0.10408921933085502" />
+                  <Stop color="WHITE" offset="0.9628252788104089" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="fightText" layoutX="7.0" layoutY="114.0" text="You tried fighting it&#10;with your stick.&#10;You tried fighting a wolf&#10;with a stick.&#10;Should've tried playing&#10;catch or something.&#10;You died." visible="false">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="1.0" centerY="0.5096153846153846" radius="0.5238095238095238">
+               <stops>
+                  <Stop color="#00000095" />
+                  <Stop color="#00000095" offset="0.007434944237918215" />
+                  <Stop color="WHITE" offset="0.10408921933085502" />
+                  <Stop color="WHITE" offset="0.9628252788104089" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="goButton" layoutX="223.0" layoutY="327.0" mnemonicParsing="false" onAction="#go" opacity="0.75" text="Continue" visible="false">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="okButton" layoutX="258.0" layoutY="327.0" mnemonicParsing="false" onAction="#ok" opacity="0.75" text="OK" visible="false">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

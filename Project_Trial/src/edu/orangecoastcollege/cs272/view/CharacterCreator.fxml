@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.orangecoastcollege.cs272.view.CharacterCreator">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#optionsScene" text="*" />
+      <Button layoutX="206.0" layoutY="324.0" mnemonicParsing="false" onAction="#start" prefHeight="48.0" prefWidth="127.0" text="Start">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Label layoutX="35.0" layoutY="49.0" text="Please Enter a Name:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameTF" layoutX="39.0" layoutY="75.0" onAction="#start" promptText="Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="377.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/face1.jpeg" />
+         </image>
+      </ImageView>
+      <Button layoutX="540.0" layoutY="89.0" mnemonicParsing="false" text="+" />
+      <Button layoutX="333.0" layoutY="89.0" mnemonicParsing="false" text="-" />
+      <Slider layoutX="382.0" layoutY="207.0" majorTickUnit="1.0" max="10.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" value="5.0" />
+      <Button layoutX="540.0" layoutY="207.0" mnemonicParsing="false" text="+" />
+      <Slider layoutX="382.0" layoutY="256.0" majorTickUnit="1.0" max="10.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" value="5.0" />
+      <Slider layoutX="382.0" layoutY="310.0" majorTickUnit="1.0" max="10.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" value="5.0" />
+      <Button layoutX="540.0" layoutY="256.0" mnemonicParsing="false" text="+" />
+      <Button layoutX="540.0" layoutY="310.0" mnemonicParsing="false" text="+" />
+      <Button layoutX="344.0" layoutY="310.0" mnemonicParsing="false" text="-" />
+      <Button layoutX="344.0" layoutY="256.0" mnemonicParsing="false" text="-" />
+      <Button layoutX="345.0" layoutY="207.0" mnemonicParsing="false" text="-" />
+      <Label layoutX="81.0" layoutY="208.0" text="Strength">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="257.0" text="Dexterity">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="311.0" text="Intellect">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="129.0" text="Points">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="206.0" layoutY="129.0" text="10">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameErrorLabel" layoutX="162.0" layoutY="15.0" text="Error: Please Enter a Name" textFill="RED" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
