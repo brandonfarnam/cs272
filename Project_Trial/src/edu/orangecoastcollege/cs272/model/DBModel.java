@@ -205,6 +205,9 @@ public class DBModel {
 			Connection connection = DriverManager.getConnection("jdbc:sqlite:" + mDBName);	
 			return connection;
 		}
+		public void close() throws SQLException{
+		    mConnection.close();
+		}
 }
 
 
